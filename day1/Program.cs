@@ -3,6 +3,8 @@
 namespace day1 {
     class Program {
         static void Main(string[] args) {
+            var watch = new System.Diagnostics.Stopwatch();
+
             string input = System.IO.File.ReadAllText(@"/Users/perjansson/Projects/day1/day1/day1.txt");
             string[] measurements = input.Split('\n');
 
@@ -39,7 +41,6 @@ namespace day1 {
             }
 
             Console.WriteLine("Part 2: " + increments);
-
 
         }
     }
