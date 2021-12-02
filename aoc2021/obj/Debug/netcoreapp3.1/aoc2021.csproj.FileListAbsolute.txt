@@ -1,0 +1,12 @@
+/Users/perjansson/Projects/aoc2021/aoc2021/bin/Debug/netcoreapp3.1/aoc2021.deps.json
+/Users/perjansson/Projects/aoc2021/aoc2021/bin/Debug/netcoreapp3.1/aoc2021.runtimeconfig.json
+/Users/perjansson/Projects/aoc2021/aoc2021/bin/Debug/netcoreapp3.1/aoc2021.runtimeconfig.dev.json
+/Users/perjansson/Projects/aoc2021/aoc2021/bin/Debug/netcoreapp3.1/aoc2021.dll
+/Users/perjansson/Projects/aoc2021/aoc2021/bin/Debug/netcoreapp3.1/aoc2021.pdb
+/Users/perjansson/Projects/aoc2021/aoc2021/obj/Debug/netcoreapp3.1/aoc2021.csproj.AssemblyReference.cache
+/Users/perjansson/Projects/aoc2021/aoc2021/obj/Debug/netcoreapp3.1/aoc2021.AssemblyInfoInputs.cache
+/Users/perjansson/Projects/aoc2021/aoc2021/obj/Debug/netcoreapp3.1/aoc2021.AssemblyInfo.cs
+/Users/perjansson/Projects/aoc2021/aoc2021/obj/Debug/netcoreapp3.1/aoc2021.csproj.CoreCompileInputs.cache
+/Users/perjansson/Projects/aoc2021/aoc2021/obj/Debug/netcoreapp3.1/aoc2021.dll
+/Users/perjansson/Projects/aoc2021/aoc2021/obj/Debug/netcoreapp3.1/aoc2021.pdb
+/Users/perjansson/Projects/aoc2021/aoc2021/obj/Debug/netcoreapp3.1/aoc2021.genruntimeconfig.cache
