@@ -1,0 +1,11 @@
+/Users/perjansson/Projects/AdventOfCode/2021/2021/bin/Release/netcoreapp3.1/2021.deps.json
+/Users/perjansson/Projects/AdventOfCode/2021/2021/bin/Release/netcoreapp3.1/2021.runtimeconfig.json
+/Users/perjansson/Projects/AdventOfCode/2021/2021/bin/Release/netcoreapp3.1/2021.runtimeconfig.dev.json
+/Users/perjansson/Projects/AdventOfCode/2021/2021/bin/Release/netcoreapp3.1/2021.dll
+/Users/perjansson/Projects/AdventOfCode/2021/2021/bin/Release/netcoreapp3.1/2021.pdb
+/Users/perjansson/Projects/AdventOfCode/2021/2021/obj/Release/netcoreapp3.1/2021.AssemblyInfoInputs.cache
+/Users/perjansson/Projects/AdventOfCode/2021/2021/obj/Release/netcoreapp3.1/2021.AssemblyInfo.cs
+/Users/perjansson/Projects/AdventOfCode/2021/2021/obj/Release/netcoreapp3.1/2021.csproj.CoreCompileInputs.cache
+/Users/perjansson/Projects/AdventOfCode/2021/2021/obj/Release/netcoreapp3.1/2021.dll
+/Users/perjansson/Projects/AdventOfCode/2021/2021/obj/Release/netcoreapp3.1/2021.pdb
+/Users/perjansson/Projects/AdventOfCode/2021/2021/obj/Release/netcoreapp3.1/2021.genruntimeconfig.cache
