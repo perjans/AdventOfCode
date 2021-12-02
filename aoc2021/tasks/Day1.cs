@@ -5,28 +5,29 @@ namespace aoc2021 {
     public class Day1 {
 
         public Day1() {
-            Stopwatch stopwatch = new Stopwatch();
-            Stopwatch stopwatchPart1 = new Stopwatch();
-            Stopwatch stopwatchPart2 = new Stopwatch();
-            stopwatch.Start();
+            Stopwatch stopwatchProg = new Stopwatch();
+            Stopwatch stopwatchTask = new Stopwatch();
+            stopwatchProg.Start();
 
-            string input = System.IO.File.ReadAllText(@"/Users/perjansson/Projects/aoc2021/aoc2021/tasks_inputs/day1.txt");
-            string[] measurementsTemp = input.Split('\n');
-            int[] measurements = Array.ConvertAll(measurementsTemp, s => int.Parse(s));
+            string text = System.IO.File.ReadAllText(@"/Users/perjansson/Projects/aoc2021/aoc2021/tasks_inputs/day1.txt");
+            string[] inputsTemp = text.Split('\n');
+            int[] inputs = Array.ConvertAll(inputsTemp, s => int.Parse(s));
 
-            stopwatchPart1.Start();
-            Console.Write("Part1: " + part1(measurements));
-            stopwatchPart1.Stop();
-            Console.WriteLine(", " + Math.Round(Convert.ToDouble(stopwatchPart1.ElapsedTicks) / Stopwatch.Frequency * 1000, 4) + "ms");
+            stopwatchTask.Start();
+            Console.Write("Part1: " + part1(inputs));
+            stopwatchTask.Stop();
+            Console.WriteLine(", " + Math.Round(Convert.ToDouble(stopwatchTask.ElapsedTicks) / Stopwatch.Frequency * 1000, 4) + "ms");
 
-            stopwatchPart2.Start();
-            Console.Write("Part2: " + part2(measurements));
-            stopwatchPart2.Stop();
-            Console.WriteLine(", " + Math.Round(Convert.ToDouble(stopwatchPart2.ElapsedTicks) / Stopwatch.Frequency * 1000, 4) + "ms");
+            stopwatchTask.Reset();
 
-            stopwatch.Stop();
+            stopwatchTask.Start();
+            Console.Write("Part2: " + part2(inputs));
+            stopwatchTask.Stop();
+            Console.WriteLine(", " + Math.Round(Convert.ToDouble(stopwatchTask.ElapsedTicks) / Stopwatch.Frequency * 1000, 4) + "ms");
 
-            Console.WriteLine("Program execution time: " + Math.Round(Convert.ToDouble(stopwatch.ElapsedTicks) / Stopwatch.Frequency * 1000, 4) + "ms");
+            stopwatchProg.Stop();
+
+            Console.WriteLine("Program execution time: " + Math.Round(Convert.ToDouble(stopwatchProg.ElapsedTicks) / Stopwatch.Frequency * 1000, 4) + "ms");
         }
 
         int part1(int[] measurements) {

@@ -5,27 +5,28 @@ namespace aoc2021 {
     public class Day2 {
 
         public Day2() {
-            Stopwatch stopwatch = new Stopwatch();
-            Stopwatch stopwatchPart1 = new Stopwatch();
-            Stopwatch stopwatchPart2 = new Stopwatch();
-            stopwatch.Start();
+            Stopwatch stopwatchProg = new Stopwatch();
+            Stopwatch stopwatchTask = new Stopwatch();
+            stopwatchProg.Start();
 
             string text = System.IO.File.ReadAllText(@"/Users/perjansson/Projects/aoc2021/aoc2021/tasks_inputs/day2.txt");
             string[] inputs = text.Split('\n');
 
-            stopwatchPart1.Start();
+            stopwatchTask.Start();
             Console.Write("Part1: " + part1(inputs));
-            stopwatchPart1.Stop();
-            Console.WriteLine(", " + Math.Round(Convert.ToDouble(stopwatchPart1.ElapsedTicks) / Stopwatch.Frequency * 1000, 4) + "ms");
+            stopwatchTask.Stop();
+            Console.WriteLine(", " + Math.Round(Convert.ToDouble(stopwatchTask.ElapsedTicks) / Stopwatch.Frequency * 1000, 4) + "ms");
 
-            stopwatchPart2.Start();
+            stopwatchTask.Reset();
+
+            stopwatchTask.Start();
             Console.Write("Part2: " + part2(inputs));
-            stopwatchPart2.Stop();
-            Console.WriteLine(", " + Math.Round(Convert.ToDouble(stopwatchPart2.ElapsedTicks) / Stopwatch.Frequency * 1000, 4) + "ms");
+            stopwatchTask.Stop();
+            Console.WriteLine(", " + Math.Round(Convert.ToDouble(stopwatchTask.ElapsedTicks) / Stopwatch.Frequency * 1000, 4) + "ms");
 
-            stopwatch.Stop();
+            stopwatchProg.Stop();
 
-            Console.WriteLine("Program execution time: " + Math.Round(Convert.ToDouble(stopwatch.ElapsedTicks) / Stopwatch.Frequency * 1000, 4) + "ms");
+            Console.WriteLine("Program execution time: " + Math.Round(Convert.ToDouble(stopwatchProg.ElapsedTicks) / Stopwatch.Frequency * 1000, 4) + "ms");
         }
 
         int part1(string[] inputs) {
