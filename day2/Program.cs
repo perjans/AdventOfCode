@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 
 namespace day2 {
     class Program {
@@ -6,10 +7,13 @@ namespace day2 {
             string text = System.IO.File.ReadAllText(@"/Users/perjansson/Projects/day2/day2/day2.txt");
             string[] inputs = text.Split('\n');
 
+            Stopwatch stopwatch = new Stopwatch();
+
             int horizontal = 0;
             int depth = 0;
 
             //Part 1
+            stopwatch.Start();
 
             foreach (var input in inputs) {
                 string direction = input.Split(' ')[0];
@@ -28,6 +32,8 @@ namespace day2 {
                 }
             }
 
+            stopwatch.Stop();
+
             Console.WriteLine("Part 1: " + horizontal * depth);
 
 
@@ -36,6 +42,8 @@ namespace day2 {
             int aim = 0;
 
             //Part 2
+
+            stopwatch.Start();
 
             foreach (var input in inputs) {
                 string direction = input.Split(' ')[0];
@@ -55,7 +63,12 @@ namespace day2 {
                 }
             }
 
+            stopwatch.Stop();
+            double ms = (Convert.ToDouble(stopwatch.ElapsedTicks) / Stopwatch.Frequency) * 1000;
+
             Console.WriteLine("Part 2: " + horizontal * depth);
+            Console.WriteLine();
+            Console.WriteLine("Execution time: " + ms + "ms");
 
         }
     }
