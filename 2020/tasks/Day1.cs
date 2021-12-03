@@ -37,7 +37,7 @@ namespace _2020.tasks {
             for (int i = 0; i < inputs.Length; i++) {
                 if (inputs[i] < threshold) {
                     for (int j = 0; j < inputs.Length; j++) {
-                        if (inputs[i] + inputs[j] == 2020) {
+                        if (inputs[i] + inputs[j] == threshold) {
                             result = inputs[i] * inputs[j];
                             break;
                         }
@@ -55,7 +55,7 @@ namespace _2020.tasks {
             for (int i = 0; i < inputs.Length; i++) {
                 if (inputs[i] < threshold) {
                     for (int j = 0; j < inputs.Length; j++) {
-                        if (inputs[i] + inputs[j] < 2020) {
+                        if (inputs[i] + inputs[j] < threshold) {
                             for (int x = 0; x < inputs.Length; x++) {
                                 if (inputs[i] + inputs[j] + inputs[x] == threshold) {
                                     result = inputs[i] * inputs[j] * inputs[x];

@@ -8,6 +8,8 @@ namespace _2020 {
             _ = new Day1();
             Console.WriteLine("\n--Day2--");
             _ = new Day2();
+            Console.WriteLine("\n--Day3--");
+            _ = new Day3();
         }
     }
 }
