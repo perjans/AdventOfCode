@@ -22,7 +22,6 @@ namespace _2021.tasks {
 
             stopwatchTask.Reset();
 
-
             stopwatchTask.Start();
             Console.Write("Part2: " + part2(inputs, 0));
             stopwatchTask.Stop();
@@ -34,7 +33,6 @@ namespace _2021.tasks {
         }
 
         int part1(string[] inputs) {
-
             string gammaString = "";
 
             for (int i = 0; i < inputs[0].Length; i++) {
@@ -53,7 +51,7 @@ namespace _2021.tasks {
                 gammaString += ones > zeros ? '1' : '0';
             }
 
-            int gamma = Convert.ToInt32(gammaString, 2);
+            int gammaRating = Convert.ToInt32(gammaString, 2);
 
             string epsilonString = "";
 
@@ -61,9 +59,9 @@ namespace _2021.tasks {
                 epsilonString += c == '1' ? '0' : '1';
             }
 
-            int epsilon = Convert.ToInt32(epsilonString, 2);
+            int epsilonRating = Convert.ToInt32(epsilonString, 2);
 
-            return gamma * epsilon;
+            return gammaRating * epsilonRating;
         }
 
         int part2(string[] inputs, int i) {
@@ -74,8 +72,6 @@ namespace _2021.tasks {
         }
 
         string getScrubberRating(string[] inputs, int i) {
-            char leastCommon;
-
             int ones = 0;
             int zeros = 0;
 
@@ -87,7 +83,7 @@ namespace _2021.tasks {
                 }
             }
 
-            leastCommon = ones >= zeros ? '0' : '1';
+            char leastCommon = ones >= zeros ? '0' : '1';
 
             List<string> filteredList = new List<string>();
 
@@ -98,7 +94,6 @@ namespace _2021.tasks {
             }
 
             string[] newInputs = filteredList.Select(s => s.ToString()).ToArray();
-            filteredList.Clear();
 
             if (newInputs.Length == 1) {
                 return newInputs[0];
@@ -109,8 +104,6 @@ namespace _2021.tasks {
         }
 
         string getOxygenRating(string[] inputs, int i) {
-            char mostCommon;
-
             int ones = 0;
             int zeros = 0;
 
@@ -122,7 +115,7 @@ namespace _2021.tasks {
                 }
             }
 
-            mostCommon = ones >= zeros ? '1' : '0';
+            char mostCommon = ones >= zeros ? '1' : '0';
 
             List<string> filteredList = new List<string>();
 
@@ -133,7 +126,6 @@ namespace _2021.tasks {
             }
 
             string[] newInputs = filteredList.Select(s => s.ToString()).ToArray();
-            filteredList.Clear();
 
             if (newInputs.Length == 1) {
                 return newInputs[0];
