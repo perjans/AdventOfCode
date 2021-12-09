@@ -9,8 +9,6 @@ namespace _2021.tasks {
             string text = System.IO.File.ReadAllText(@"/Users/perjansson/Projects/AdventOfCode/2021/tasks_inputs/day8.txt");
             string[] inputs = text.Split('\n');
 
-            List<Dictionary<int, string>> dictList = new List<Dictionary<int, string>>();
-
             string balle = "";
             int entillballe = 0;
 
@@ -74,9 +72,6 @@ namespace _2021.tasks {
                                 foreach (var c in patternDict[1]) {
                                     if (!pattern.Contains(c)) {
                                         patternDict.Add(6, pattern);
-                                        if (patternDict.ContainsKey(6)) {
-                                            i = 0;
-                                        }
                                     }
                                 }
                                 charCount = 0;
@@ -91,7 +86,6 @@ namespace _2021.tasks {
                                 }
                                 if (charCount == 1) {
                                     patternDict.Add(9, pattern);
-                                    i = 0;
                                 }
                                 charCount = 0;
                             }
@@ -107,7 +101,6 @@ namespace _2021.tasks {
                                 }
                                 if (charCount == 3) {
                                     patternDict.Add(2, pattern);
-                                    i = 0;
                                 }
                                 charCount = 0;
                             }
@@ -152,12 +145,6 @@ namespace _2021.tasks {
 
                 string rightSideValues = inputRow.Split('|')[1].Trim();
                 string[] outputs = rightSideValues.Split(' ');
-
-                if (patternDict.Count <= 9) {
-                    foreach (var item in patternDict.OrderBy(r => r.Key)) {
-                        Console.WriteLine(item.Key + ":" + item.Value);
-                    }
-                }
 
                 foreach (var output in outputs) {
                     foreach (var item in patternDict) {
