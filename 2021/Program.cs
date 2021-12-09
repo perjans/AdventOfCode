@@ -6,13 +6,22 @@ namespace _2021 {
         static void Main(string[] args) {
 
             //Console.WriteLine("--Day1--");
-            //_ = new Day1();
+            //new Day1();
 
             //Console.WriteLine("\n--Day2--");
-            //_ = new Day2();
+            //new Day2();
 
-            Console.WriteLine("\n--Day3--");
-            _ = new Day3();
+            //Console.WriteLine("\n--Day3--");
+            //new Day3();
+
+            //Console.WriteLine("\n--Day4--");
+            //new Day4();
+
+            //Console.WriteLine("\n--Day5--");
+            //new Day5();
+
+            Console.WriteLine("\n---Day8---");
+            new Day8();
 
         }
     }
