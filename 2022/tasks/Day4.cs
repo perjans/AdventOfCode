@@ -69,7 +69,7 @@ namespace _2022.tasks {
                 int from2 = int.Parse(elves[1].Split('-')[0]);
                 int to2 = int.Parse(elves[1].Split('-')[1]);
 
-                if (from1 <= to1 && from2 <= to1) score++;
+                if (from1 <= to2 && from2 <= to1) score++;
             }
 
             return score;
