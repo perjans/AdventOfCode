@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "BRNCqVVjzCegO7ENf81yuLI+C8ba+H2I5QzUMuJcQ4dHTWDL2oDYCdleKgpdQ75bstiPP9sbYSj1o7XH2POxdA==",
+  "success": true,
+  "projectFilePath": "/Users/perjansson/Projects/AdventOfCode/2022/2022.csproj",
+  "expectedPackageFiles": [
+    "/Users/perjansson/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.10/microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "/Users/perjansson/.nuget/packages/microsoft.netcore.app.host.osx-x64/3.1.31/microsoft.netcore.app.host.osx-x64.3.1.31.nupkg.sha512",
+    "/Users/perjansson/.nuget/packages/microsoft.netcore.app.ref/3.1.0/microsoft.netcore.app.ref.3.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}
